@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kontrolery.Option2Kontroler">
+   <children>
+      <Button fx:id="backid" layoutX="750.0" layoutY="424.0" mnemonicParsing="false" onAction="#back" text="Powrót" />
+      <TableView layoutX="10.0" layoutY="10.0" prefHeight="430.0" prefWidth="165.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Nr Regału" />
+            <TableColumn prefWidth="89.0" text="\% zapełnienia" />
+         </columns>
+      </TableView>
+      <Label layoutX="322.0" layoutY="30.0" prefHeight="17.0" prefWidth="330.0" style="-fx-background-color: #0066cc;" text="                                      Dodaj przedmiot" textAlignment="CENTER" wrapText="true" />
+      <Separator layoutX="185.0" layoutY="15.0" prefWidth="605.0" />
+      <TextField layoutX="328.0" layoutY="70.0" />
+      <TextField layoutX="328.0" layoutY="105.0" />
+      <TextField layoutX="328.0" layoutY="140.0" />
+      <TextField layoutX="328.0" layoutY="175.0" />
+      <TextField layoutX="328.0" layoutY="213.0" />
+      <DatePicker layoutX="328.0" layoutY="245.0" prefWidth="149.0" />
+      <Label layoutX="487.0" layoutY="74.0" text="Nazwa" />
+      <Label layoutX="487.0" layoutY="109.0" text="Wysokość" />
+      <Label layoutX="487.0" layoutY="144.0" text="Szerokość" />
+      <Label layoutX="487.0" layoutY="179.0" text="Długość" />
+      <Label layoutX="487.0" layoutY="217.0" text="Waga" />
+      <Label layoutX="487.0" layoutY="249.0" text="Data" />
+      <Button layoutX="540.0" layoutY="290.0" mnemonicParsing="false" text="Dodaj przedmiot" />
+      <Separator layoutX="185.0" layoutY="328.0" prefWidth="605.0" />
+      <Label layoutX="185.0" layoutY="366.0" text="Id dodanego przemiotu" />
+      <ListView layoutX="417.0" layoutY="344.0" prefHeight="17.0" prefWidth="30.0" />
+      <Label layoutX="453.0" layoutY="342.0" text="na półce nr" />
+      <Label layoutX="185.0" layoutY="342.0" text="Przedmiot został umieszczony na regale nr" />
+      <ListView layoutX="518.0" layoutY="344.0" prefHeight="17.0" prefWidth="30.0" />
+      <ListView layoutX="313.0" layoutY="366.0" prefHeight="17.0" prefWidth="30.0" />
+      <Button fx:id="reloadid" layoutX="679.0" layoutY="424.0" mnemonicParsing="false" onAction="#reload" text="Odśwież" />
+   </children>
+</AnchorPane>
